@@ -7,9 +7,9 @@ int main()
 {
     int a;
     int b;
-    cout << "Podaj liczbe a";
+    cout << "Podaj liczbe a: ";
     cin >> a;
-    cout << "Podaj liczbe b";
+    cout << "Podaj liczbe b: ";
     cin >> b;
     while (a != b)
     {
@@ -17,7 +17,7 @@ int main()
         {
             a = a - b;
         }
-        if (b > a)
+        else
         {
             b = b - a;
         }
