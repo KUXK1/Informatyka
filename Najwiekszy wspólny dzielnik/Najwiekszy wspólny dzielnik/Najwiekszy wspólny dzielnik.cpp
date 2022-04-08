@@ -7,30 +7,29 @@ int main()
 {
     int a;
     int b;
-    int a1;
-    int b1;
+    
+    int iloczyn;
     int nww;
     cout << "Podaj liczbe a: ";
     cin >> a;
     cout << "Podaj liczbe b: ";
     cin >> b;
-    a1 = a;
-    b1 = b;
+    iloczyn = a * b;
 
-    while (a1 != b1)
+    while (a != b)
     {
-        if (a1 > b1)
+        if (a > b)
         {
-            a1 = a1 - b1;
+            a = a - b;
         }
         else
         {
-            b1 = b1 - a1;
+            b = b - a;
         }
     }
 
-    cout << a1 << " Jest najwiekszym wspólnym dzielnikiem"<< endl;
-    nww = a * b / a1;
+    cout << a << " Jest najwiekszym wspólnym dzielnikiem"<< endl;
+    nww = iloczyn / a;
     cout << nww << " Jest najmniejszy wspólna wielokrotność";
 }
 
