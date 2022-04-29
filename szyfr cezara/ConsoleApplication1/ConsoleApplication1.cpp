@@ -25,6 +25,20 @@ void Funkcja(char tab[],int klucz)
                 tab[i] = tab[i] + klucz - 26;
             }
         }
+    
+    }
+    else
+    {
+        for (int i = 0; i < dl; i++)
+        {
+            if (tab[i] + klucz >= 'a') {
+                tab[i] += klucz;
+            }
+            else
+            {
+                tab[i] = tab[i] + klucz + 26;
+            }
+        }
     }
 
 }
@@ -34,12 +48,15 @@ int main()
     char tab[200];
     
     int i;
-    cout << "Podaj o ile przesunąc \n";
+    cout << "Podaj o ile przesunąc: \n";
     cin >> klucz;
-    cout << " podaj słowo \n";
+    cout << "Podaj słowo: \n";
     cin >> tab;
-    
+    cout<< "Przed szyfrowaniem: " << tab<< "\n";
     Funkcja(tab,klucz);
+    cout<<"Po szyfrowaniu: " << tab<< "\n";
+    Funkcja(tab, -klucz);
+    cout << "Po rozszyfrowaniu: " << tab << "\n";
 }
 
 
