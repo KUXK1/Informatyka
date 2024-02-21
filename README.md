@@ -1,4 +1,3 @@
 # Informatyka
 
-edit
-edit2
+Repozytorium te zawiera aplikacje konsolowe którę zostały zrobione na poczet zaliczenia przedmiotu.
